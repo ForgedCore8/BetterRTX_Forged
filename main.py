@@ -7,10 +7,9 @@ from time import sleep
 from typing import List
 
 from requests import get
-
-from constants import UNINSTALL_STUB, UNINSTALL_TONEMAPPING, URL, lang
 from utils import (check_path_exists, get_appx_package, perform_action,
                    print_logo, print_success, schedule)
+from constants import UNINSTALL_STUB, UNINSTALL_TONEMAPPING, URL, lang
 
 
 def select_installer_location():
@@ -241,7 +240,7 @@ def installation_method(
 
     sleep(3)
     print_logo()
-    print_success(lang)
+    print_success()
     sleep(10)
     sys.exit()
 
